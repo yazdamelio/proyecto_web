@@ -38,7 +38,10 @@ export default function Navbar() {
                             <Link className="nav-link" to="/productos"> Productos </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/contacto"> Contacto </Link>
+                            <Link className="nav-link" to="/contacto"> Contacto </Link> 
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/carrito"> Carrito </Link> 
                         </li>
                        {/* <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

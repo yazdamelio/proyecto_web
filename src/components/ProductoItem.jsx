@@ -13,21 +13,24 @@ export default function ProductoItem(){
             setCarrito(carrito.map((itemCarrito) => (itemCarrito.id === item.id? { ...item, cantidad:
             estaAgregado.cantidad + 1}: itemCarrito)));
         }else {
-            setCarrito([...carrito, item]);
+            setCarrito([...carrito, { ...item, cantidad: 1 }]);
         }
     }
 
     //CARD
     return (
-        <>
-            {data.map((item) => (
-                <div key={item.id} className="card">
-                    <h3>{item.nombre}</h3>
-                    <p>Precio: ${item.precio}</p>
-                    <button onClick={() => buyProducts(item)}>Comprar</button>
-                </div>
-            ))}
-        </>
+        
+         <div className="card">
+            <div className="card-body" >
+                {data.map((item) => (
+                    <div key={item.id} className="col-lg-3">
+                        <h3>{item.nombre}</h3>
+                        <p>Precio: ${item.precio}</p>
+                        <button className= "btn btn-primary" onClick={() => buyProducts(item)}>Comprar</button>
+                    </div>
+                ))}
+            </div>
+        </div>
     );
 
 

@@ -35,15 +35,17 @@ export default function Carrito() {
     return (
         <>
         <h1>Carrito</h1>
+
+        
             {carrito.map((item) => (
-                <div key={item.id} className="card">
+                <div key={item.id} className="col-lg-3">
                     <h3>{item.nombre}</h3>
                     <p>Precio unitario: ${item.precio}</p>
                     <button  onClick={ ()=> restar(item)}    >-</button>
                     <p>{item.cantidad}</p>
                     <button  onClick={ ()=> sumar(item)}    >+</button>
                     <p>Total: ${item.precio * item.cantidad}</p>
-                    <button onClick={ ()=> eliminar(item)}>Eliminar</button>
+                    <button className= "btn btn-primary" onClick={ ()=> eliminar(item)}>Eliminar</button>
                 </div>
             ))}
         </>
