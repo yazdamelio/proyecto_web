@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "nombre": "mate rojo",
+        "descripcion": "Lorem ipsum dolor sit amet",
+        "precio": "100",
+        "cantidad": 0
+        
+    }   , 
+    {
+        "id":2,
+        "nombre": "mate azul",
+        "descripcion": "Lorem ipsum dolor sit amet",
+        "precio": "200",
+        "cantidad": 0
+        
+    }  ,
+    {
+        "id":3,
+        "nombre": "mate amarillo",
+        "descripcion": "Lorem ipsum dolor sit amet",
+        "precio": "300",
+        "cantidad": 0
+        
+    }  
+]
